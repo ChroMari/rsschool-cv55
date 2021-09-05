@@ -3,12 +3,21 @@
 
 <hr>
 
-почта: chromarija@gmail.com <br>
+mail: chromarija@gmail.com <br>
 diskord: @Mari Rouse#0371 <br>
 
 <hr>
 
 <h2>About me</h2>
+
+I love to work and I love the dynamics in my development. I am a person who loves aesthetics, so I try to do my work not only internally at good quality, but also externally reflect the beauty and elegance of the project. I like to code, by trial and error, I realized that this is what I want to do for 10 years.
+<br>
+I try to help other people by explaining and guiding them. I have a small vocation for pedagogy; I bring up even the most complex and confusing material for others.
+<br>
+I want to bring benefit and beauty to people with my work, so that when they see the project, they forget about the bad and gray in their lives and realize that there is a place for everyone in life.
+<br>
+I know how to build my own personal learning plan and like to study topics in depth, not dwelling on the superficial knowledge that is needed to solve a problem and create a project.
+<br>
 
 <h2>Skills</h2>
 
@@ -81,15 +90,23 @@ diskord: @Mari Rouse#0371 <br>
   render = (): HTMLCanvasElement => this.canvas;
 }
 ```
-Краткая информация о себе (ваша цель и приоритеты, подчеркните свои сильные стороны, расскажите о своём опыте работы, если опыта работы нет, расскажите о своём стремлении и способности быстро учиться и узнавать новое)
 
 <h2>work experience</h2>
 
-  - Photofilter - приложение позволяющие редактировать изображения. Работа с изображениями происходит при помощи отрисовки через canvas.Также в ходе разработки был использован webpack, typescript, sass. За соблюдение правил при написание приложения отвечал Eslint. <br>
-    ссылка на демо: https://rolling-scopes-school.github.io/chromari-JSFEPRESCHOOL/photofilter/
+  - Photofilter - application allowing you to edit images. Working with images is done using canvas rendering. Also during development, webpack, typescript, sass were used. Eslint was responsible for following the rules when writing the application <br>
+    demo link: https://rolling-scopes-school.github.io/chromari-JSFEPRESCHOOL/photofilter/
+ 
+<h2>Education</h2> 
+
+Period of study | Institution name
+------------ | -------------
+2004-2015 | MOU Lyceum (with a physical and mathematical bias)
+2015-2019 | Vladimir State University A.G. and N.G. Stoletovs (Information Security)
+2020 | Coursera (Moscow Institute of Physics and Technology, Yandex, Interface Development: Layout and JavaScript)
+2020 | Coursera (Hong Kong University of Science and Technology, Full-Stack Web Development with React)
+2021 | RS school pre-school javascript
     
-  - Vertical-sounds slider - 
-    
-Опыт работы. Junior Dev может указать пройденные курсы и тренинги, перечислить учебные проекты, или проекты, выполненные на фрилансе с указанием использованных навыков и ссылками на исходный код.
-Образование (включая курсы, семинары, лекции, онлайн-обучение)
-Английский язык (уровень английского языка, если была языковая практика, расскажите о ней)
+<h2>language</h2>
+
+ - English A1+
+ - Japan N5
