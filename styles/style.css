@@ -7,10 +7,11 @@
 }
 
 :root {
-  --color-bg: #11172B;
+  --color-bg: #13122C;
   --color-text: #ACC0D7;
   --color-header-border: #2C3251;
   --color-link-active: #0EE7B9;
+  --color-blue: #74D8FD;
 }
 
 a {
@@ -35,10 +36,30 @@ body {
   overflow: hidden;
 }
 
+.visualhidden {
+  position: absolute;
+  clip: rect(1px,1px,1px,1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+}
+
 .wrapper {
   max-width: 1040px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.card {
+  padding: 20px 25px;
+}
+
+.card_colored {
+  background: linear-gradient(253.53deg, rgba(105, 119, 180, 0.2) 2.78%, rgba(42, 51, 92, 0.2) 98.61%);
 }
 
 /*----------------------------header--------------------------------------*/
@@ -132,6 +153,97 @@ body {
   width: 40px;
 }
 
+/*-------------------------home------------------------------------------*/
+.home {
+  padding-top: 30px;
+}
+
+.home__wrapper {
+  display: flex;
+  column-gap: 90px;
+}
+
+.home__gretting {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 123px;
+  line-height: 144px;
+  color: var(--color-link-active);
+  width: 100%;
+  margin-left: 50%;
+}
+
+.home__title {
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 59px;
+  color: var(--color-blue);
+  width: 100%;
+  margin-left: 53%;
+}
+
+.home__information {
+  margin-top: 45px;
+}
+
+.home__text {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.home__text + .home__text {
+    margin-top: 15px;
+}
+
+.home__text_colored {
+  color: var(--color-blue);
+}
+
+.home__text_positon {
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+@media  (max-width: 1010px)  {
+  .home__gretting {
+    margin-left: -5px;
+  }
+  .home__title {
+    margin-left: 0;
+  }
+}
+
+@media  (max-width: 900px)  {
+  .home__wrapper {
+    justify-content: center;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .home__avatar {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .home__information {
+    margin-top: 20px;
+  }
+
+  .home__gretting {
+    margin-top: 0;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .home__title {
+    font-size: 30px
+  }
+}
+
 
 @media  (max-width: 750px)  {
   .hamburger {
@@ -159,5 +271,15 @@ body {
 
   .navigation_hamburger li + li {
     margin-top: 30px;
+  }
+}
+
+@media  (max-width: 600px)  {
+  .home__wrapper {
+    justify-content: flex-start;
+  }
+
+  .home__avatar {
+    display: none;
   }
 }
