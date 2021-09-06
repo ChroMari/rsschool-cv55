@@ -6,10 +6,158 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-bg: #11172B;
+  --color-text: #ACC0D7;
+  --color-header-border: #2C3251;
+  --color-link-active: #0EE7B9;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
+  font-size: 1.6rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Roboto', sans-serif;
+
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1040px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/*----------------------------header--------------------------------------*/
+.header {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--color-header-border);
+  position: relative;
+}
+
+.header__navigation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.navigation__link {
   font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: var(--color-text);
+  text-transform: uppercase;
+  font-weight: 300;
+  transition: all .3s ease-out;
+}
+
+.navigation__link:hover {
+  color: var(--color-link-active);
+}
+
+.navigation__link_active {
+  color: var(--color-link-active);
+}
+
+.hamburger {
+  display: none;
+
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.hamburger__line {
+  background-color: var(--color-text);
+  width: 30px;
+  height: 2px;
+  border-radius: 20px;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  transition: all .3s ease-out;
+}
+
+.hamburger__line::after {
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: var(--color-text);
+  transition: all .3s ease-out;
+}
+
+.hamburger__line::before {
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: var(--color-text);
+  transition: all .3s ease-out;
+}
+
+.hamburger:hover .hamburger__line,
+.hamburger:hover .hamburger__line::after,
+.hamburger:hover .hamburger__line::before{
+  background-color: var(--color-link-active);
+}
+
+.hamburger__line_active {
+  width: 40px;
+}
+
+
+@media  (max-width: 750px)  {
+  .hamburger {
+    display: block;
+  }
+
+  .navigation_hamburger {
+    position: absolute;
+    background-color:  var(--color-bg);
+    right: -100%;
+    top: 0;
+    flex-direction: column;
+    align-items: flex-end;
+
+    height: 100vh;
+    width: 320px;
+    padding-top: 70px;
+    padding-right: 40px;
+    transition: all .6s ease-out;
+  }
+
+  .navigation_hamburger-active {
+    right: 0;
+  }
+
+  .navigation_hamburger li + li {
+    margin-top: 30px;
+  }
 }
