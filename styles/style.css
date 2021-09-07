@@ -25,6 +25,7 @@ li {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,7 +34,7 @@ body {
   color: var(--color-text);
   font-family: 'Roboto', sans-serif;
 
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .visualhidden {
@@ -60,6 +61,15 @@ body {
 
 .card_colored {
   background: linear-gradient(253.53deg, rgba(105, 119, 180, 0.2) 2.78%, rgba(42, 51, 92, 0.2) 98.61%);
+}
+
+.title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #0EE7B9;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 /*----------------------------header--------------------------------------*/
@@ -206,12 +216,89 @@ body {
   padding-left: 30px;
 }
 
+/*-----------------------about-----------------------------------*/
+.about {
+  padding: 40px 0;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__content {
+  max-width: 570px;
+}
+
+.about__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ACC0D7;
+  margin-bottom: 10px;
+}
+
+.about__video {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  border: none;
+  position: relative;
+}
+
+.about__video::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 40%;
+  height: 2px;
+  top: -15px;
+  background-color: #0EE7B9;
+  transition: all .3s ease-out;
+}
+
+.about__video::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  width: 40%;
+  height: 2px;
+  bottom: -15px;
+  background-color: #0EE7B9;
+  transition: all .3s ease-out;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+.about__video:hover::before,
+.about__video:hover::after {
+  width: 100%;
+}
+
+/*-------------------------media-------------------------------------*/
+
 @media  (max-width: 1010px)  {
   .home__gretting {
     margin-left: -5px;
   }
   .home__title {
     margin-left: 0;
+  }
+
+  .about__wrapper {
+    flex-direction: column;
+  }
+
+  .about__content {
+    max-width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -251,7 +338,7 @@ body {
   }
 
   .navigation_hamburger {
-    position: absolute;
+    position: fixed;
     background-color:  var(--color-bg);
     right: -100%;
     top: 0;
@@ -281,5 +368,11 @@ body {
 
   .home__avatar {
     display: none;
+  }
+}
+
+@media  (max-width: 370px)  {
+  .about__video {
+    width: 100%;
   }
 }
