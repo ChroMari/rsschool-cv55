@@ -13,6 +13,10 @@
     <link rel="shortcut icon" href="./assets/svg/cv.svg" type="image/x-icon">
 
     <title>CV - Khromova Maria</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
     <header class="header">
@@ -25,7 +29,8 @@
           <ul class="navigation navigation_hamburger">
             <li><a class="navigation__link navigation__link_active" href="#home">Home</a></li>
             <li><a class="navigation__link" href="#about">About me</a></li>
-            <li><a class="navigation__link" href="#">Works</a></li>
+            <li><a class="navigation__link" href="#">Skills</a></li>
+            <li><a class="navigation__link" href="#work">Projects</a></li>
             <li><a class="navigation__link" href="#">Code</a></li>
             <li><a class="navigation__link" href="#">Educaton</a></li>
             <li><a class="navigation__link" href="#">Language</a></li>
@@ -77,8 +82,181 @@
         </div>
       </section>
 
+      <section class="skills" id="skills">
+        <div class="wrapper">
+            <h2 class="title">#Skills</h2>
+
+          <ul>
+         <li class="skill-menu__item">
+           <p class="skill-menu__item-text">HTML (80%)</p>
+           <div class="progressbar">
+             <span style="width: 80%"></span>
+           </div>
+         </li>
+         <li class="skill-menu__item">
+           <p class="skill-menu__item-text">CSS/SASS (75%)</p>
+           <div class="progressbar">
+             <span style="width: 75%"></span>
+           </div>
+         </li>
+         <li class="skill-menu__item">
+           <p class="skill-menu__item-text">JS (68%)</p>
+           <div class="progressbar">
+             <span style="width: 68%"></span>
+           </div>
+         </li>
+         <li class="skill-menu__item">
+           <p class="skill-menu__item-text">TS (45%)</p>
+           <div class="progressbar">
+             <span style="width: 45%"></span>
+           </div>
+         </li>
+         <li class="skill-menu__item">
+           <p class="skill-menu__item-text">React (25%)</p>
+           <div class="progressbar">
+             <span style="width: 25%"></span>
+           </div>
+         </li>
+       </ul>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="wrapper">
+          <h2 class="title">#Projects</h2>
+
+          <article class="work__project">
+            <a class ="work__preview" href="https://rolling-scopes-school.github.io/chromari-JSFEPRESCHOOL/photofilter/" target="_blank">
+              <img class="work__image" src="./assets/images/photofilter.png" alt="photofilter">
+            </a>
+            <div class="work__content">
+              <h4 class="work__subtitle">#Photofilter</h4>
+              <p class="work__text">--- Webpack, typescript, sass, eslint </p>
+              <a class="work__link" href="#">View code
+                <span class="work__link-image"></span>
+              </a>
+            </div>
+          </article>
+
+          <article class="work__project work__project_inversia">
+            <a class ="work__preview" href="https://rolling-scopes-school.github.io/chromari-JSFEPRESCHOOL/photofilter/" target="_blank">
+              <img class="work__image" src="./assets/images/photofilter.png" alt="photofilter">
+            </a>
+            <div class="work__content">
+              <h4 class="work__subtitle">#Photofilter</h4>
+              <p class="work__text">--- Webpack, typescript, sass, eslint </p>
+              <a class="work__link" href="#">View code
+                <span class="work__link-image"></span>
+              </a>
+            </div>
+          </article>
+
+          <article class="work__project">
+            <a class ="work__preview" href="https://rolling-scopes-school.github.io/chromari-JSFEPRESCHOOL/photofilter/" target="_blank">
+              <img class="work__image" src="./assets/images/photofilter.png" alt="photofilter">
+            </a>
+            <div class="work__content">
+              <h4 class="work__subtitle">#Photofilter</h4>
+              <p class="work__text">--- Webpack, typescript, sass, eslint </p>
+              <a class="work__link" href="#">View code
+                <span class="work__link-image"></span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="code" id="code">
+        <div class="wrapper">
+          <h2 class="title">#Code</h2>
+            <pre><code class="typescript">
+  class SelectedItem {
+    select: HTMLElement;
+
+    title: string;
+
+    filterCanvas: string;
+
+    canvas: HTMLCanvasElement;
+
+    constructor(name: string, filter: Array<string>) {
+      this.select = document.createElement('div');
+      this.title = name;
+      this.filterCanvas = filter.join(' ');
+
+      this.canvas = document.createElement('canvas');
+    }
+
+    renderFilterCanvas = (img: HTMLImageElement): void => {
+      const ctx = this.canvas.getContext('2d');
+      this.canvas.width = img.width;
+      this.canvas.height = img.height;
+      if (ctx) {
+        ctx.filter = this.filterCanvas;
+        ctx.drawImage(img, 0, 0);
+      }
+    };
+
+    render = (): HTMLElement => {
+      this.select.classList.add('selected-item');
+
+      const wrapperCanvas = document.createElement('div');
+      wrapperCanvas.classList.add('selected-item__canvas');
+      this.select.appendChild(wrapperCanvas);
+
+      wrapperCanvas.appendChild(this.canvas);
+
+      const titleSelect = document.createElement('h4');
+      titleSelect.classList.add('selected-item__title');
+      titleSelect.textContent = this.title;
+      this.select.appendChild(titleSelect);
+
+      return this.select;
+    };
+  }
+            </code></pre>
+        </div>
+      </section>
+
+      <section class="language" id="language">
+        <div class="wrapper">
+          <h2 class="title">#Language</h2>
+
+          <article class="home__information card card_colored">
+            <span class="home__text">const language = {</span>
+              <span class="home__text home__text_positon">English: <span class="home__text_colored">'A1+'</span> ;</span>
+              <span class="home__text home__text_positon">Japan: <span class="home__text_colored">'N5'</span> ;</span>
+            <span class="home__text">}</span>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="wrapper">
+          <h2 class="title">#Contacts</h2>
+
+          <article class="home__information card card_colored">
+            <span class="home__text">const contacts = {</span>
+
+              <ul class="contacts__lists">
+                <li class="home__text home__text_positon">github: <span class="home__text_colored">'chromari'</span> ;</li>
+                <li class="home__text home__text_positon">e-mail: <span class="home__text_colored">'chromarija@gmail.com'</span> ;</li>
+              </ul>
+
+            <span class="home__text">}</span>
+          </article>
+
+        </div>
+      </section>
+
 
     </main>
+
+    <footer class="footer">
+      
+    </footer>
 
     <script src="js/index.js"></script>
   </body>
