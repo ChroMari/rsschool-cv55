@@ -29,12 +29,12 @@
           <ul class="navigation navigation_hamburger">
             <li><a class="navigation__link navigation__link_active" href="#home">Home</a></li>
             <li><a class="navigation__link" href="#about">About me</a></li>
-            <li><a class="navigation__link" href="#">Skills</a></li>
+            <li><a class="navigation__link" href="#skills">Skills</a></li>
             <li><a class="navigation__link" href="#work">Projects</a></li>
-            <li><a class="navigation__link" href="#">Code</a></li>
-            <li><a class="navigation__link" href="#">Educaton</a></li>
-            <li><a class="navigation__link" href="#">Language</a></li>
-            <li><a class="navigation__link" href="#">Contacts</a></li>
+            <li><a class="navigation__link" href="#code">Code</a></li>
+            <li><a class="navigation__link" href="#educatuion">Educaton</a></li>
+            <li><a class="navigation__link" href="#language">Language</a></li>
+            <li><a class="navigation__link" href="#contacts">Contacts</a></li>
           </ul>
         </nav>
 
@@ -219,6 +219,36 @@
         </div>
       </section>
 
+      <section class="education" id="educatuion">
+        <div class="wrapper">
+          <h2 class="title">#Education</h2>
+          <div class="education__wrapper">
+
+          <article class="home__information card card_colored">
+            <span class="home__text">const University = {</span>
+              <span class="home__text home__text_positon">Name: <span class="home__text_colored">'Владимерский государственный университет'</span> ;</span>
+              <span class="home__text home__text_positon">Special: <span class="home__text_colored">'специальность "Информационная безопасность"'</span> ;</span>
+              <span class="home__text home__text_positon">Year: <span class="home__text_colored">'2015-2019'</span> ;</span>
+            <span class="home__text">}</span>
+          </article>
+
+          <article class="home__information card card_colored">
+            <span class="home__text">const Coursera = {</span>
+              <span class="home__text home__text_positon">English: <span class="home__text_colored">'МОСКОВСКИЙ ФИЗИКО-ТЕХНИЧЕСКИЙ ИНСТИТУТ'</span> ;</span>
+              <span class="home__text home__text_positon">Special: <span class="home__text_colored">'Специализация Разработка интерфейсов: вёрстка и JavaScript"'</span> ;</span>
+              <span class="home__text home__text_positon">Year: <span class="home__text_colored">'2020'</span> ;</span>
+            <span class="home__text">}</span>
+          </article>
+
+          <article class="home__information card card_colored">
+            <span class="home__text">const RS_school = {</span>
+              <span class="home__text home__text_positon">Name: <span class="home__text_colored">'Подготовительный курс «JavaScript/Front-end. Stage 0»'</span> ;</span>
+              <span class="home__text home__text_positon">Year: <span class="home__text_colored">'2021'</span> ;</span>
+            <span class="home__text">}</span>
+          </article>
+        </div>
+      </section>
+
       <section class="language" id="language">
         <div class="wrapper">
           <h2 class="title">#Language</h2>
@@ -229,6 +259,8 @@
               <span class="home__text home__text_positon">Japan: <span class="home__text_colored">'N5'</span> ;</span>
             <span class="home__text">}</span>
           </article>
+
+          </div>
 
         </div>
       </section>
@@ -255,7 +287,14 @@
     </main>
 
     <footer class="footer">
-      
+      <div class="wrapper footer__wrapper">
+        <a href="https://github.com/ChroMari/rsschool-cv" target="_blank">
+          <img class="footer__img" src="./assets/svg/github.svg" alt="github">
+        </a>
+        <a href="https://rs.school/" target="_blank">
+          <img class="footer__img footer__img-rs" src="./assets/svg/rs_school_js.svg" alt="RS_school">
+        </a>
+      </div>
     </footer>
 
     <script src="js/index.js"></script>
