@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./assets/svg/cv.svg" type="image/x-icon">
+
+    <title>CV - Khromova Maria</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <span class="header__hamburger hamburger">
+          <span class="hamburger__line"></span>
+        </span>
+
+        <nav class="header__navigation">
+          <ul class="navigation navigation_hamburger">
+            <li><a class="navigation__link navigation__link_active" href="#home">Home</a></li>
+            <li><a class="navigation__link" href="#about">About me</a></li>
+            <li><a class="navigation__link" href="#skills">Skills</a></li>
+            <li><a class="navigation__link" href="#work">Projects</a></li>
+            <li><a class="navigation__link" href="#code">Code</a></li>
+            <li><a class="navigation__link" href="#educatuion">Educaton</a></li>
+            <li><a class="navigation__link" href="#language">Language</a></li>
+            <li><a class="navigation__link" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <main>
+      <h1 class="visualhidden">Khromova Maria</h1>
+      <section class="home" id="home">
+        <div class="wrapper home__wrapper">
+          <img class="home__avatar" src="./assets/images/avatar.png" alt="Khromova Maria">
+          <div class="home__content">
+            <span class="home__gretting">Hello</span>
+            <h3 class="home__title">I'm Maria</h3>
+
+            <article class="home__information card card_colored">
+              <span class="home__text">const Name = {</span>
+                <span class="home__text home__text_positon">First name: <span class="home__text_colored">Khromova</span> ;</span>
+                <span class="home__text home__text_positon">Last Name: <span class="home__text_colored">Maria</span> ;</span>
+              <span class="home__text">}</span>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="wrapper">
+          <h2 class="title">#About me</h2>
+          <div class="about__wrapper">
+            <div class="about__content">
+              <p class="about__text">  I love to work and I love the dynamics in my development. I am a person who loves aesthetics, so I try to do my work not only internally at good quality, but also externally reflect the beauty and elegance of the project. I like to code, by trial and error, I realized that this is what I want to do for 10 years.</p>
+              <p class="about__text">I try to help other people by explaining and guiding them. I have a small vocation for pedagogy; I bring up even the most complex and confusing material for others.</p>
+              <p class="about__text">I want to bring benefit and beauty to people with my work, so that when they see the project, they forget about the bad and gray in their lives and realize that there is a place for everyone in life.</p>
+              <p class="about__text">I know how to build my own personal learning plan and like to study topics in depth, not dwelling on the superficial knowledge that is needed to solve a problem and create a project.</p>
+            </div>
+            <div class="about__video">
+              <iframe  src="https://www.youtube.com/embed/zp1BXPX8jcU?controls=0?autoplay=0?modestbranding=1"
+                loading="lazy"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="wrapper">
+            <h2 class="title">#Skills</h2>
+
+          <ul>
+         <li class="skill-menu__item">
+           <p class="skill-menu__item-text">HTML (80%)</p>
+           <div class="progressbar">
+             <span style="width: 80%"></span>
+           </div>
+         </li>
+         <li class="skill-menu__item">
+           <p class="skill-menu__item-text">CSS/SASS (75%)</p>
+           <div class="progressbar">
+             <span style="width: 75%"></span>
+           </div>
+         </li>
+         <li class="skill-menu__item">
+           <p class="skill-menu__item-text">JS (68%)</p>
+           <div class="progressbar">
+             <span style="width: 68%"></span>
+           </div>
+         </li>
+         <li class="skill-menu__item">
+           <p class="skill-menu__item-text">TS (45%)</p>
+           <div class="progressbar">
+             <span style="width: 45%"></span>
+           </div>
+         </li>
+         <li class="skill-menu__item">
+           <p class="skill-menu__item-text">React (25%)</p>
+           <div class="progressbar">
+             <span style="width: 25%"></span>
+           </div>
+         </li>
+       </ul>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="wrapper">
+          <h2 class="title">#Projects</h2>
+
+          <article class="work__project">
+            <a class ="work__preview" href="https://rolling-scopes-school.github.io/chromari-JSFEPRESCHOOL/photofilter/" target="_blank">
+              <img class="work__image" src="./assets/images/photofilter.png" alt="photofilter">
+            </a>
+            <div class="work__content">
+              <h4 class="work__subtitle">#Photofilter</h4>
+              <p class="work__text">--- Webpack, typescript, sass, eslint </p>
+              <a class="work__link" href="#">View code
+                <span class="work__link-image"></span>
+              </a>
+            </div>
+          </article>
+
+          <article class="work__project work__project_inversia">
+            <a class ="work__preview" href="https://rolling-scopes-school.github.io/chromari-JSFEPRESCHOOL/photofilter/" target="_blank">
+              <img class="work__image" src="./assets/images/photofilter.png" alt="photofilter">
+            </a>
+            <div class="work__content">
+              <h4 class="work__subtitle">#Photofilter</h4>
+              <p class="work__text">--- Webpack, typescript, sass, eslint </p>
+              <a class="work__link" href="#">View code
+                <span class="work__link-image"></span>
+              </a>
+            </div>
+          </article>
+
+          <article class="work__project">
+            <a class ="work__preview" href="https://rolling-scopes-school.github.io/chromari-JSFEPRESCHOOL/photofilter/" target="_blank">
+              <img class="work__image" src="./assets/images/photofilter.png" alt="photofilter">
+            </a>
+            <div class="work__content">
+              <h4 class="work__subtitle">#Photofilter</h4>
+              <p class="work__text">--- Webpack, typescript, sass, eslint </p>
+              <a class="work__link" href="#">View code
+                <span class="work__link-image"></span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="code" id="code">
+        <div class="wrapper">
+          <h2 class="title">#Code</h2>
+            <pre><code class="typescript">
+  class SelectedItem {
+    select: HTMLElement;
+
+    title: string;
+
+    filterCanvas: string;
+
+    canvas: HTMLCanvasElement;
+
+    constructor(name: string, filter: Array<string>) {
+      this.select = document.createElement('div');
+      this.title = name;
+      this.filterCanvas = filter.join(' ');
+
+      this.canvas = document.createElement('canvas');
+    }
+
+    renderFilterCanvas = (img: HTMLImageElement): void => {
+      const ctx = this.canvas.getContext('2d');
+      this.canvas.width = img.width;
+      this.canvas.height = img.height;
+      if (ctx) {
+        ctx.filter = this.filterCanvas;
+        ctx.drawImage(img, 0, 0);
+      }
+    };
+
+    render = (): HTMLElement => {
+      this.select.classList.add('selected-item');
+
+      const wrapperCanvas = document.createElement('div');
+      wrapperCanvas.classList.add('selected-item__canvas');
+      this.select.appendChild(wrapperCanvas);
+
+      wrapperCanvas.appendChild(this.canvas);
+
+      const titleSelect = document.createElement('h4');
+      titleSelect.classList.add('selected-item__title');
+      titleSelect.textContent = this.title;
+      this.select.appendChild(titleSelect);
+
+      return this.select;
+    };
+  }
+            </code></pre>
+        </div>
+      </section>
+
+      <section class="education" id="educatuion">
+        <div class="wrapper">
+          <h2 class="title">#Education</h2>
+          <div class="education__wrapper">
+
+          <article class="home__information card card_colored">
+            <span class="home__text">const University = {</span>
+              <span class="home__text home__text_positon">Name: <span class="home__text_colored">'Владимерский государственный университет'</span> ;</span>
+              <span class="home__text home__text_positon">Special: <span class="home__text_colored">'специальность "Информационная безопасность"'</span> ;</span>
+              <span class="home__text home__text_positon">Year: <span class="home__text_colored">'2015-2019'</span> ;</span>
+            <span class="home__text">}</span>
+          </article>
+
+          <article class="home__information card card_colored">
+            <span class="home__text">const Coursera = {</span>
+              <span class="home__text home__text_positon">English: <span class="home__text_colored">'МОСКОВСКИЙ ФИЗИКО-ТЕХНИЧЕСКИЙ ИНСТИТУТ'</span> ;</span>
+              <span class="home__text home__text_positon">Special: <span class="home__text_colored">'Специализация Разработка интерфейсов: вёрстка и JavaScript"'</span> ;</span>
+              <span class="home__text home__text_positon">Year: <span class="home__text_colored">'2020'</span> ;</span>
+            <span class="home__text">}</span>
+          </article>
+
+          <article class="home__information card card_colored">
+            <span class="home__text">const RS_school = {</span>
+              <span class="home__text home__text_positon">Name: <span class="home__text_colored">'Подготовительный курс «JavaScript/Front-end. Stage 0»'</span> ;</span>
+              <span class="home__text home__text_positon">Year: <span class="home__text_colored">'2021'</span> ;</span>
+            <span class="home__text">}</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="language" id="language">
+        <div class="wrapper">
+          <h2 class="title">#Language</h2>
+
+          <article class="home__information card card_colored">
+            <span class="home__text">const language = {</span>
+              <span class="home__text home__text_positon">English: <span class="home__text_colored">'A1+'</span> ;</span>
+              <span class="home__text home__text_positon">Japan: <span class="home__text_colored">'N5'</span> ;</span>
+            <span class="home__text">}</span>
+          </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="wrapper">
+          <h2 class="title">#Contacts</h2>
+
+          <article class="home__information card card_colored">
+            <span class="home__text">const contacts = {</span>
+
+              <ul class="contacts__lists">
+                <li class="home__text home__text_positon">github: <span class="home__text_colored">'chromari'</span> ;</li>
+                <li class="home__text home__text_positon">e-mail: <span class="home__text_colored">'chromarija@gmail.com'</span> ;</li>
+              </ul>
+
+            <span class="home__text">}</span>
+          </article>
+
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <a href="https://github.com/ChroMari/rsschool-cv" target="_blank">
+          <img class="footer__img" src="./assets/svg/github.svg" alt="github">
+        </a>
+        <a href="https://rs.school/" target="_blank">
+          <img class="footer__img footer__img-rs" src="./assets/svg/rs_school_js.svg" alt="RS_school">
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
